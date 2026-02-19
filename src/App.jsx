@@ -1,21 +1,18 @@
 
 import './App.css'
+import MovieCard from './components/MoiveCard';
 
 function App() {
 
   return (
     <>
-    <HelloWorld display="Hello World 1"/>
-    <HelloWorld display="Whars UP"/>
-    <HelloWorld display="How you doin"/>
-    </>
-  )
-}
+    <MovieCard movie={{title:"Titanic", releaseDate:"1997"}} />
+    <MovieCard movie={{title:"Inception", releaseDate:"2010"}} />
+    <MovieCard movie={{title:"3 idiots", releaseDate:"2008"}} />
 
-function HelloWorld({display}) {
-  return (
-    <div>{display}</div>
-  )
+
+    </>
+  );
 }
 
 export default App
